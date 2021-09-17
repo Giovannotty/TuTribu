@@ -1,3 +1,6 @@
 from django.contrib import admin
+from Tribus.models import *
 
-# Register your models here.
+
+admin.site.register (Tribus)
+admin.site.register (Eventos)
