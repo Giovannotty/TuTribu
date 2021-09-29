@@ -19,6 +19,26 @@ class Eventos(Tribus):
     imagen_Evento = models.ImageField(null=True, blank=True)
     archivoInfo = models.FileField(null=True, blank=True)
 
+    def agregar_Comentario(self):
+        pass
+
+    def actualizar_Comentario(self):
+        pass
+
+    def eliminar_Comentario(self):
+        pass
+
+
+class Post(Tribus):
+    pass
+
+class Comentario(models.Model):
+    usuario = models.CharField(max_length=100)
+    idPost = models.ForeignKey(Post, on_delete=models.CASCADE)
+    fecha = models.DateField(auto_now_add=True)
+    post = models.ForeignKey(Post, on_delete=models.CASCADE)
+    contenido = models.TextField()
+
     def agregar_Evento(self):
         pass
 
@@ -28,10 +48,5 @@ class Eventos(Tribus):
     def eliminar_Evento(self):
         pass
 
-    
-
-    
 
 
-class Post():
-    pass

@@ -4,3 +4,5 @@ from Tribus.models import *
 
 admin.site.register (Tribus)
 admin.site.register (Eventos)
+admin.site.register (Comentario)
+
