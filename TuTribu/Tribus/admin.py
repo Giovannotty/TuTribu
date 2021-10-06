@@ -1,8 +1,15 @@
 from django.contrib import admin
 from Tribus.models import *
+from Productos.models import *
+from Usuarios.models import *
+from Marketplace.models import *
+from Checkout.models import *
 
-
-admin.site.register (Tribus)
-admin.site.register (Eventos)
+admin.site.register (Tribe)
+admin.site.register (Evento)
+admin.site.register (Post)
+admin.site.register (Reaccion)
+admin.site.register (ReaccionPost)
 admin.site.register (Comentario)
+
 
