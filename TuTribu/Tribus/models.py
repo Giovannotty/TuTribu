@@ -71,6 +71,9 @@ class Comentario(models.Model):
     #post = models.ForeignKey(Post, on_delete=models.CASCADE)
     contenido = models.TextField()
 
+    def __str__(self):
+        return self.idPost
+
 class Evento(models.Model):
     nuevo_Evento = models.CharField(max_length=100)
     definir_Evento = models.CharField(max_length=200)
@@ -81,6 +84,10 @@ class Evento(models.Model):
     localizacion_Evento = models.CharField(max_length=200)
     imagen_Evento = models.ImageField(null=True, blank=True)
     archivoInfo = models.FileField(null=True, blank=True)
+    
+    def __str__(self):
+        return self.nuevo_Evento
+
 class Locacion(models.Model):
     pass
 

@@ -11,6 +11,8 @@ router.register('tribu',  TribuAPI)
 router.register('post', PostAPI)
 router.register('reaccion', ReaccionAPI)
 router.register('reaccionpost', ReaccionPostAPI)
+router.register('evento', EventoAPI)
+router.register('comentario', ComentarioAPI)
 
 urlpatterns = [
     path('crud/', include(router.urls))

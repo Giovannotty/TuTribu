@@ -20,7 +20,13 @@ class ReaccionPostAPI(viewsets.ModelViewSet):
     serializer_class = ReaccionPostSerial
     queryset = ReaccionPost.objects.all()
     
+class ComentarioAPI(viewsets.ModelViewSet):
+    serializer_class = ComentarioSerial
+    queryset = Comentario.objects.all()
 
+class EventoAPI(viewsets.ModelViewSet):
+    serializer_class = EventoSerial
+    queryset = Evento.objects.all()
 
 
 
